@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Contacto</title>
+
+    <!-- Seguridad & HTTPS -->
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
+    <meta http-equiv="Strict-Transport-Security" content="max-age=63072000; includeSubDomains; preload" />
+
+    <!-- Font Awesome (CDN seguro) -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Estilos externos -->
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <!-- NAV -->
+    <header class="nav">
+      <div class="brand">PROPIEDADES QUILLAY</div>
+      <nav>
+        <a href="#acerca">Acerca de</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+      <!-- Texto en movimiento (marquee) -->
+      <div class="marquee">
+        <p>
+          PRESENTA TU MARCA * PRESENTA TU MARCA * PRESENTA TU MARCA * PRESENTA TU MARCA *
+        </p>
+      </div>
+
+      <!-- Contenido centrado -->
+      <div class="overlay">
+        <h2 id="contacto">CONTÁCTANOS</h2>
+        <p class="subtitle">
+          ¿Quieres que trabajemos juntos? Ingresa tus datos y nos pondremos en contacto contigo en breve.
+        </p>
+
+        <form action="https://formspree.io/f/your-id" method="POST">
+          <div class="row">
+            <input type="text" name="nombre" placeholder="Nombre" required />
+            <input type="text" name="apellido" placeholder="Apellido" required />
+          </div>
+          <input type="email" name="correo" placeholder="Correo Electrónico" required />
+          <textarea name="mensaje" placeholder="Mensaje" rows="4" required></textarea>
+          <button type="submit">ENVIAR</button>
+        </form>
+
+        <div class="social-links">
+          <a href="https://www.instagram.com/tu_usuario" target="_blank" aria-label="Instagram"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a href="https://wa.me/56966073116" target="_blank" aria-label="WhatsApp"
+            ><i class="fab fa-whatsapp"></i
+          ></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      +56 9 6607 3116
+    </footer>
+
+    <script src="index.js"></script>
+  </body>
+</html>
